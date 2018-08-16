@@ -1,10 +1,144 @@
 @import 'theme-colors';
 $theme-font: 100% verdana, sans-serif;
 
+html {
+  background-image: url(../../static/images/mtn.jpg);
+  background-size: cover;
+}
+
 body {
   font: $theme-font;
-  background-color: $themeColor-Light;
+  background: rgba(0,0,0,0);
   h1, h2 {
       color: $themeColor-Dark
   }
 }
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.slider-list {
+  height: 500px !important;
+  width: 80%;
+}
+
+//All Pages
+.page-container {
+  background-color: rgba(256, 256, 256, 0.95);
+  padding: 2rem;
+  border-radius: 5px;
+  min-height: 50vh;
+  margin: 0;
+  h2 {
+    padding-bottom: 1rem;
+    color: #f05f40;
+  }
+}
+
+//NavBar
+.navbar {
+  width: 100%;
+  ul {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+//Landing Page
+.landing-page-body {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+  }
+ .line {
+    width: 50px;
+    border-top: 5px solid #f05f40;
+  }
+  p {
+    margin: 0;
+    margin-top: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px #000000;
+  }
+}
+
+
+//Slider
+
+.slider-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.slider-image {
+  width: 50%;
+  height: 50%;
+}
+
+//Portfolio.js
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px gainsboro;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  img {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  span {
+    font-weight: bold;
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    a {
+      padding-left: 1rem;
+      padding-right: 2rem;
+      margin-bottom: 2rem;
+    }
+    }
+}
+
+//Technology.js
+.technology-card-group {
+  display: flex;
+  flex-direction: row;
+}
+.technology-card {
+  border: solid 1px gainsboro;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+//Contact.js
+

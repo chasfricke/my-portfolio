@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "production": "react-frontend-portfolio",
+    "default": "react-frontend-portfolio"
+  }
+}
